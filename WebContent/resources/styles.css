@@ -1,0 +1,378 @@
+@CHARSET "ISO-8859-1";
+
+header {
+	position: relative;
+	background: black;
+	height: 100px;
+	padding: 2px;
+	color: white;
+	margin-left: -8px;
+	margin-right: -10px;
+	/* text-align: center; */
+	margin-top: -10px;
+}
+
+footer {
+	margin-left: -8px;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	padding: 3px;
+	color: white;
+	background-color: black;
+	clear: both;
+	text-align: center;
+	max-height: 80px;
+}
+
+body {
+	height: 100%;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: DarkCyan;
+	margin-left: -8px;
+	margin-right: -10px;
+}
+
+li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+
+li a {
+	font-family: Arial;
+	font-style: normal;
+	display: block;
+	color: white;
+	text-align: left;
+	padding: 5px 13px;
+	text-decoration: none;
+	font-style: normal;
+}
+
+table {
+	margin-top: 20px;
+	height: 100px;
+	font-size: 13.5px;
+	font-family: Arial;
+	font-style: normal;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid black;
+	width: 900px;
+	font-style: normal;
+}
+
+/* thead, tbody, tr, td, th { */
+/* 	display: block; */
+/* } */
+
+tr:after {
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+thead th {
+	background-color: DarkCyan;
+	color: white;
+	height: 12px;
+	line-height: 12px;
+	text-align: left;
+}
+
+tbody {
+	height: auto;
+	overflow-y: auto;
+}
+
+thead {
+	/* fallback */
+	width: 97%;
+	/* minus scroll bar width */
+	width: calc(100% - 5px);
+	border-bottom: 1px solid black;
+}
+
+thead th {
+	width: 22.5%;
+	float: left;
+	padding: 10px;
+	border-right: 1px solid black;
+}
+
+tbody td {
+	width: 22.5%;
+	float: left;
+	padding: 10px;
+	word-wrap: break-word;
+}
+
+tbody td:last-child, thead th:last-child {
+	border-right: none;
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+	font-family: Arial;
+	font-style: normal;
+}
+
+.button {
+	width: 125px;
+	height: 35px;
+	background: rgba(5, 4, 2, 0.28);
+	padding: 10px 15px;
+	text-align: center;
+	border-radius: 3px;
+	color: black;
+	font-weight: bold;
+	box-shadow: 1px 3px 5px #999;
+}
+
+.button:hover, .attdbutton:hover, #markattendance:hover {
+	background-color: DarkCyan
+}
+
+.button:active, .attdbutton:active, #markattendance:active {
+	background-color: DarkCyan;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.reportTable {
+	overflow: hidden
+}
+
+body#associate a#view, body#attd a#attd, body#report a#report, body#home a#home
+	{
+	color: #fff;
+	background: rgba(5, 4, 2, 0.28);
+}
+
+.marquee {
+	color: navy;
+	padding: 150px;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.reportOneHead th {
+	width: 13.85%;
+	float: left;
+	padding: 10px;
+	border-right: 1px solid black;
+	text-align: center;
+}
+
+.scrollReportOne td {
+	width:auto;
+	float: left;
+	padding: 10px;
+	border-right: 1px;
+
+}
+
+.scrollAddDemo, .scrollReportOne, .scrollReportTwo, .scrollNextDemo ,.scroll, .scrollAttendance,.scrollAddAssociate,.scrollAddAttendance
+{
+	display: block;
+	width: 900px;
+	height: 150px;
+	overflow-y: scroll;
+	
+}
+
+.reportTwoHead th {
+		width: 12.27%;
+	float: left;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 5px;
+	border-right: 1px solid black;
+
+}
+
+.scrollReportTwo td {
+
+	float: left;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 5px;
+width: 97px;
+}
+h2 {
+	text-align: left;
+}
+
+.result1 th {
+	width: 22.4%;
+	float: left;
+	padding: 10px;
+	border-right: 1px solid black;
+}
+
+.result1 td {
+	width: 22.2%;
+	float: left;
+	padding: 10px;
+	border-right: 1px solid black;
+}
+
+.attdbutton {
+	width: 120px;
+	height: 25px;
+	background: rgba(5, 4, 2, 0.28);
+	padding: 3px 15px;
+	text-align: center;
+	border-radius: 3px;
+	color: black;
+	font-weight: bold;
+	box-shadow: 1px 3px 5px #999;
+}
+
+#markattendance {
+	width: 130px;
+	height: 35px;
+	background: rgba(5, 4, 2, 0.28);
+	padding: 10px 15px;
+	text-align: center;
+	border-radius: 3px;
+	color: black;
+	font-weight: bold;
+	box-shadow: 1px 3px 5px #999;
+}
+
+.success {
+	color: green;
+	font-size: 12px;
+}
+
+.warning {
+	color: #A52A2A;
+	font-size: 12px;
+}
+
+.text-danger {
+	color: red;
+}
+
+.nextDemoHead th {
+	width: 18.77%;
+	float: left;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 5px;
+	border-right: 1px solid black;
+}
+
+.scrollNextDemo td {
+width: 150px;
+	float: left;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.nextDemo {
+	margin-top: -80px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid black;
+	width: 900px;
+}
+
+.caption {
+	color: blue;
+}
+.addDemoHead th {
+	width: 23.78%;
+	float: left;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 5px;
+	border-right: 1px solid black;
+}
+
+.scrollAddDemo td {
+width: 194.7px;
+	float: left;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.addDemo {
+	margin-top: 50px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid black;
+	width: 900px;
+}
+
+.addAssociateHead th {
+	width: 23.78%;
+	float: left;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 5px;
+	border-right: 1px solid black;
+}
+
+.scrollAddAssociate td {
+width: 194.7px;
+	float: left;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.addAssociate {
+	margin-top: 50px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid black;
+	width: 900px;
+}
+.addAttendanceHead th {
+	width: 23.78%;
+	float: left;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 5px;
+	border-right: 1px solid black;
+}
+
+.scrollAddAttendance td {
+width: 194.7px;
+	float: left;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.addAttendance{
+	margin-top: 50px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid black;
+	width: 900px;
+}

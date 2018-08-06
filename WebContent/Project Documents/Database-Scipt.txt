@@ -1,0 +1,44 @@
+Database name : attdmgntsystem
+
+CREATE TABLE associate
+(
+  associateid integer NOT NULL,
+  associatename character varying(30),
+  associatecontact character varying(10),
+  associateemail character varying(40),
+  CONSTRAINT associate_pkey PRIMARY KEY (associateid)
+) 
+
+
+
+CREATE TABLE associate_demo
+(
+  mappingid integer NOT NULL,
+  associate_id integer,
+  demo_id integer,
+  CONSTRAINT associate_demo_pkey PRIMARY KEY (mappingid),
+  CONSTRAINT associate_demo_associate_id_demo_id_key UNIQUE (associate_id, demo_id)
+)
+
+
+CREATE TABLE public.demo
+(
+  demoid integer NOT NULL,
+  demoname character varying(30),
+  startdatetime timestamp,
+  enddatetime timestamp,
+  CONSTRAINT demo_pkey PRIMARY KEY (demoid)
+)
+
+
+
+For sequence
+
+CREATE SEQUENCE hibernate_sequence
+  INCREMENT 1
+  MINVALUE 3
+  MAXVALUE 10000000
+  START 100
+  CACHE 1;
+ALTER TABLE hibernate_sequence
+  OWNER TO postgres;
